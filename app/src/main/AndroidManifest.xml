@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="berwin.StockHandler">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE"
+        tools:ignore="ManifestOrder" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".PresentationLayer.MainActivity"
+            android:label="@string/title_home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="log"
+                    android:scheme="twitter" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity
+            android:name=".PresentationLayer.KiszedesActivity"
+            android:label="@string/title_kiszedes"
+            android:parentActivityName=".PresentationLayer.MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PresentationLayer.PotlasActivity"
+            android:label="@string/title_potlas"
+            android:parentActivityName=".PresentationLayer.MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PresentationLayer.PotlasokActivity"
+            android:label="Elődiszpó Kezelő"
+            android:parentActivityName=".PresentationLayer.PotlasActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PresentationLayer.SzabvisszaActivity"
+            android:label="@string/title_szabvissza"
+            android:parentActivityName=".PresentationLayer.MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PresentationLayer.KuldottPotlasokActivity"
+            android:label="Elődiszpó Kezelő"
+            android:parentActivityName=".PresentationLayer.PotlasActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PresentationLayer.KeszletKivetActivity"
+            android:label="StockHandler - KÉSZLETKIVÉT"
+            android:parentActivityName=".PresentationLayer.MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PresentationLayer.VirtualVegekActivity"
+            android:label="@string/title_virtualvegek"
+            android:parentActivityName=".PresentationLayer.KiszedesActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PresentationLayer.VegszerkesztoActivity"
+            android:label="@string/title_vegszerkeszto"
+            android:parentActivityName=".PresentationLayer.MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PresentationLayer.UzenetekActivity"
+            android:label="@string/title_uzenetek"
+            android:parentActivityName=".PresentationLayer.MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PresentationLayer.MatricaSzerkesztoActivity"
+            android:label="@string/title_matricaszerkeszto"
+            android:parentActivityName=".PresentationLayer.MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PresentationLayer.CikkszamSzerkesztoActivity"
+            android:label="@string/title_cikkszamatiro"
+            android:parentActivityName=".PresentationLayer.MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PresentationLayer.NaplozasActivity"
+            android:label="@string/title_naplozas"
+            android:parentActivityName=".PresentationLayer.MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PresentationLayer.PlanSzedesActivity"
+            android:label="@string/title_planszedes"
+            android:parentActivityName=".PresentationLayer.MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PresentationLayer.PlanSzedesKiszedesActivity"
+            android:label="@string/title_planszedes"
+            android:parentActivityName=".PresentationLayer.PlanSzedesActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".PresentationLayer.UpdateActivity"
+            android:label="@string/title_update"
+            android:parentActivityName=".PresentationLayer.MainActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.files"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

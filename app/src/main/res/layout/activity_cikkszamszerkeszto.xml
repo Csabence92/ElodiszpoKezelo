@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#515050"
+    android:keepScreenOn="true">
+
+
+    <TextView
+        android:id="@+id/TextViewConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:background="#686868"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/beolvasas"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/id"
+                android:textColor="#f8f8f8"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="80dp"/>
+
+            <EditText
+                android:id="@+id/EditTextCikkszSzerkesztoID"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:maxLength="50"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:inputType="number"
+                android:layout_marginTop="6dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                tools:ignore="Autofill,LabelFor"/>
+
+            <Button
+                android:id="@+id/btnCikkszSzerkesztoQRScan"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:text="@string/qr_olvasas"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextViewIDHelyesE"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle= "bold"
+            android:layout_gravity="center"
+            android:layout_marginStart="23dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/beolvasott_adatok"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|fill"
+                android:gravity="center"
+                android:text="@string/id"
+                android:textColor="#BDBDBD"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginStart="80dp"/>
+
+            <Spinner
+                android:id="@+id/SpinnerCikkszSzerkesztoBeolvasottID"
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:descendantFocusability="blocksDescendants"
+                android:drawSelectorOnTop="true"
+                android:textAlignment="center"
+                android:layout_gravity="bottom"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btnCikkszSzerkesztoBeolvasottTorles"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:text="@string/torles"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|fill"
+                android:gravity="center"
+                android:text="@string/cikkszam"
+                android:textColor="#BDBDBD"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginStart="40dp"/>
+
+            <TextView
+                android:id="@+id/TextViewCikkszSzerkesztoBeolvasottCikkszam"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|fill"
+                android:gravity="center"
+                android:text="@string/bin"
+                android:textColor="#BDBDBD"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginStart="40dp"/>
+
+            <TextView
+                android:id="@+id/TextViewCikkszSzerkesztoBeolvasottBin"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:gravity="center"
+                android:text="@string/hossz"
+                android:textColor="#BDBDBD"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewCikkszSzerkesztoBeolvasottHossz"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:layout_marginStart="14dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:gravity="center"
+                android:text="@string/szelesseg"
+                android:textColor="#BDBDBD"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewCikkszSzerkesztoBeolvasottSzelesseg"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:layout_marginStart="14dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:gravity="center"
+                android:text="@string/desszin_leiras"
+                android:textColor="#BDBDBD"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewCikkszSzerkesztoBeolvasottDesszin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/cikkszamatiras"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/TextViewCikkszSzerkesztoBeolvasottLokacioAdat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/lokacio"
+                android:textColor="#FFF"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginStart="40dp"/>
+
+            <TextView
+                android:id="@+id/TextViewCikkszSzerkesztoBeolvasottUjLokacioAdat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|fill"
+                android:gravity="center"
+                android:text="Új lokáció:"
+                android:textColor="#FFF"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/TextViewCikkszSzerkesztoBeolvasottLokacio"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/SpinnerCikkszSzerkesztoUjLokacio"
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:descendantFocusability="blocksDescendants"
+                android:drawSelectorOnTop="true"
+                android:textAlignment="center"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:visibility="gone"
+                android:entries="@array/ujlokaciok"/>
+
+            <Switch
+                android:id="@+id/SwitchCikkszSzerkesztoLokacio"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|fill"
+                android:gravity="center"
+                android:text="@string/uj_cikkszamPont"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewCikkszSzerkesztoUjCikkszam"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:textColor="#0ac9c0"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCikkszSzerkesztoBefejezes"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="@string/mentes"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textColor="#1e7f11"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+

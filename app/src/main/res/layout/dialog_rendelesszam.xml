@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:windowSoftInputMode="stateAlwaysHidden">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/add_meg_a_rendelesszamot"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:id="@+id/rendelessszamScanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+    </me.dm7.barcodescanner.zxing.ZXingScannerView>
+    <Switch
+        android:id="@+id/rendelesLED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/led"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:text="Kézi bevitel:"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            tools:ignore="HardcodedText" />
+
+        <Switch
+            android:id="@+id/SwitchKeziBevitel"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/TextViewBeolvasottID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:text="Előző Rendelésszám:"
+            android:textColor="#2200ff"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/TextViewID"
+            android:layout_width="wrap_content"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:text="@string/nem_talalhat"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill,LabelFor"
+            android:visibility="visible"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/EditTextID"
+            android:layout_width="150dp"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:inputType="text|number"
+            tools:ignore="Autofill,LabelFor"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnElozolegBeolvasott"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Előzőleg bolvasott betöltése"
+        android:layout_gravity="center"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

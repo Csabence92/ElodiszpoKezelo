@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/SzabvisszaMenuTextViewLehetosegek"
+        android:actionLayout="@layout/actionbar_textview"
+        app:showAsAction="ifRoom"
+        android:title="" />
+
+    <item
+        android:id = "@+id/SzabvisszaMenuUjLokacio"
+        android:title="@string/uj_lokacioSima"
+        app:showAsAction="never" />
+
+    <item
+        android:id = "@+id/SzabvisszaMenuItemReconnect"
+        android:title="@string/ujracsatlakozas"
+        app:showAsAction="never" />
+
+</menu>

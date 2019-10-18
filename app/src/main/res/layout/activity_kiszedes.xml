@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#515050"
+    android:keepScreenOn="true">
+
+    <TextView
+        android:id="@+id/TextViewConnection"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="37dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="10dp">
+
+        <Switch
+            android:id="@+id/SzovetBelesSwitch"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Szövet"
+            android:textColor="#ff5000"
+            android:textSize="25sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="25sp"
+            android:gravity="center|left"
+            android:layout_height="39dp"
+            android:text="Bélés"
+            android:textStyle="normal"
+            android:textColor="#ff5000"
+            android:layout_marginTop="1dp"
+            android:layout_gravity="left"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutKiszedesMainLay"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:background="#686868"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextViewRendelessszam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/rendelesszam"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/TextViewKiszedesLezarva"
+            android:layout_width="300dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextViewKiszedesCikkszamText"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|fill"
+                android:layout_marginStart="40dp"
+                android:gravity="center"
+                android:text="@string/cikkszam"
+                android:textColor="#BDBDBD"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewKiszedesCikkszam"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutBelesSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/SpinnerKiszedesBelesek"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/TextViewVanAdatBeles"
+                    android:layout_width="250dp"
+                    android:textColor="#ff0000"
+                    android:text="Ez a Bélés nincs mentve!"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle= "bold"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/szukseges_hossz"
+                android:textColor="#BDBDBD"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewKiszedesSzuksegesHossz"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:layout_marginStart="50dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutRendelesiSzelesseg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|fill"
+                android:gravity="center"
+                android:text="@string/rendelesi_szelesseg"
+                android:textColor="#BDBDBD"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewRendelesiSzelesseg"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|fill"
+                android:gravity="center"
+                android:text="@string/keszleten_hossz"
+                android:textColor="#BDBDBD"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewKiszedesKeszletenHossz"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:layout_marginStart="50dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/lokacio"
+                android:textColor="#BDBDBD"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewKiszedesLokacio"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:layout_marginStart="50dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginEnd="20dp"
+            tools:ignore="RtlHardcoded">
+
+            <Button
+                android:id="@+id/btnVirtualVegek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="19dp"
+                android:text="@string/virt_vegek"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/id"
+                android:textColor="#f8f8f8"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/EditTextID"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:maxLength="50"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:inputType="number"
+                android:layout_marginTop="6dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                tools:ignore="Autofill,LabelFor" />
+
+            <Button
+                android:id="@+id/btnKiszedesQRScan"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:text="@string/qr_olvasas"
+                android:layout_gravity="center"
+                android:layout_marginStart="19dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextViewIDHelyesE"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle= "bold"
+            android:layout_gravity="center"
+            android:layout_marginStart="23dp"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutBeolvasottAdatok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Beolvasott adatok:"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/TextViewKiszedesBeolvasottCikkszamText"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|fill"
+                    android:gravity="center"
+                    android:text="@string/id"
+                    android:textColor="#BDBDBD"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="80dp" />
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="52dp"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/SpinnerKiszedesCikkszamBeolvasottID"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:descendantFocusability="blocksDescendants"
+                        android:drawSelectorOnTop="true"
+                        android:textAlignment="center"
+                        android:layout_gravity="bottom"
+                        android:gravity="center" />
+
+                    <Spinner
+                        android:id="@+id/SpinnerKiszedesAnyagBeolvasottID"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:descendantFocusability="blocksDescendants"
+                        android:drawSelectorOnTop="true"
+                        android:textAlignment="center"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/TextViewVirtualVegE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"
+                        android:text="Ez Virtuális vég!"
+                        android:textColor="#00ffff"
+                        tools:ignore="HardcodedText"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnBeolvasottTorles"
+                    android:layout_width="110dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/torles"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinerLayoutKiszedesSzelesseg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|fill"
+                    android:gravity="center"
+                    android:text="@string/szelesseg"
+                    android:textColor="#BDBDBD"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="40dp"/>
+
+                <TextView
+                    android:id="@+id/TextViewKiszedesSzelesseg"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextViewSzelessegHelyesE"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle= "bold"
+                android:layout_gravity="right"
+                android:layout_marginRight="27dp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/lokacio"
+                    android:textColor="#BDBDBD"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TextViewKiszedesBin"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:gravity="center"
+                    android:text="@string/hossz"
+                    android:textColor="#BDBDBD"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TextViewKiszedesHossz"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:descendantFocusability="blocksDescendants"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:layout_marginStart="14dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Eddig beolvasott adatok:"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Beolv. hossz | Virt. vég nélkül:"
+                android:textColor="#f8f8f8"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/TextViewEddigBeolvasottHossz"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="#ff1b02"
+                android:layout_marginStart="5dp"
+                android:text="0.0"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Beolv. db | Virt. beolvasott db:"
+                android:textColor="#f8f8f8"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/TextViewEddigBeolvasottDB"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:layout_marginStart="10dp"
+                android:text="0"
+                android:textColor="#ff1b02"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btnKiszedesMentesBefejezes"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="@string/mentes"
+                android:textColor="#1e7f11"
+                android:textStyle="bold"
+                android:layout_marginStart="35dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnKiszedesMentesLezaras"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="@string/lezaras"
+                android:textColor="#b22020"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinerLayoutVanVirtVeg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2600ff"
+            android:text="@string/van_virtualis_veg"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnVirtualVegMegtekinto"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:text="@string/mutasd"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:background="@drawable/shape" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

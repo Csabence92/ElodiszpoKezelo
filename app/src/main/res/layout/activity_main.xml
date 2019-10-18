@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#515050"
+    android:keepScreenOn="true"
+    tools:context=".PresentationLayer.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="@string/focim"
+                android:textColor="#fff"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextViewConnection"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/versionName"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="570dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnKiszedes"
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/kiszedes"
+                    android:textSize="20sp"
+                    style="@style/Widget.AppCompat.Button"/>
+
+                <Button
+                    android:id="@+id/btnPlanSzedes"
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="50dp"
+                    android:gravity="center"
+                    android:text="PLAN SZEDÉS"
+                    android:textSize="20sp"
+                    style="@style/Widget.AppCompat.Button"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/btnSzabvissza"
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="SzabVissza"
+                    android:textSize="20sp"
+                    style="@style/Widget.AppCompat.Button"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/btnPotlas"
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="50dp"
+                    android:gravity="center"
+                    android:text="@string/potlas"
+                    android:textSize="20sp"
+                    style="@style/Widget.AppCompat.Button"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnVegszerkeszto"
+                android:layout_width="400dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/vegszerkesztes"
+                android:textSize="20sp"
+                style="@style/Widget.AppCompat.Button"/>
+
+            <Button
+                android:id="@+id/btnCikkszamatiro"
+                android:layout_width="400dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/cikkszamatirasEgybe"
+                android:textSize="20sp"
+                style="@style/Widget.AppCompat.Button"/>
+
+            <Button
+                android:id="@+id/btnKeszletKivet"
+                android:layout_marginTop="10dp"
+                android:layout_width="400dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/keszlet_kivetelezes"
+                android:textSize="20sp"
+                style="@style/Widget.AppCompat.Button"/>
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="400dp"
+                android:layout_height="55dp"
+                android:text="@string/update"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.AppCompat.Button"/>
+
+            <Button
+                android:id="@+id/btnNaplozas"
+                android:layout_marginTop="10dp"
+                android:layout_width="400dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Naplózás"
+                android:textSize="20sp"
+                style="@style/Widget.AppCompat.Button"/>
+
+
+            <Button
+                android:id="@+id/btnMessages"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="@string/uzenetek"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/TextViewMainUjUzenet"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/a_mai_napon_van_uj_uzenet"
+                android:textColor="#00267f"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="65dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/TextViewDevelopmentState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Fejlesztés állása:"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <Button
+                android:id="@+id/btnReleaseNote"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:text="Verziók"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:background="@drawable/shape" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

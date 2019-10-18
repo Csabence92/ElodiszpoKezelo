@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:windowSoftInputMode="stateAlwaysHidden">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Vég Megosztása \\ Mentés:"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/TextViewMegosztasAdatok"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:text="Adatok"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/CheckBoxTeljesVeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teljes véget adom ki!"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/TextViewPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:text="Megosztási hossz:"
+            android:textColor="#000"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/EditTextMegosztasHossz"
+            android:layout_width="100dp"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:inputType="text|number"
+            tools:ignore="Autofill,LabelFor"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:text="Vigyázz! Ezzel menteni is fogsz! Biztos mented?"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnMegosztasMegse"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Mégsem"
+            android:textSize="16sp"
+            android:textColor="#b22020"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnMegosztasMehet"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/mehet"
+            android:textSize="16sp"
+            android:textColor="#1e7f11"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PresentationLayer.PlanSzedesActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextViewPlanSzedesSzovet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Szovet"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
+
+</android.support.v7.widget.LinearLayoutCompat>

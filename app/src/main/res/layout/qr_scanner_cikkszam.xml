@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/qr_olvasas"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/scanner_view"></me.dm7.barcodescanner.zxing.ZXingScannerView>
+    <Switch
+        android:id="@+id/ledSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/led"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/qrCikkszamIdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/add_meg_az_id_t"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/qrCikkszamID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qrCikkszamIdTextView"
+            android:layout_marginLeft="10dp"
+            android:gravity="right"
+            android:inputType="number" />
+    </RelativeLayout>
+
+
+</LinearLayout>

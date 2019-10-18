@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">StockHandler</string>
+    <string name="title_home">StockHandler</string>
+    <string name="title_kiszedes">StockHandler - KISZEDÉS</string>
+    <string name="title_potlas">StockHandler - PÓTLÁS</string>
+    <string name="title_szabvissza">StockHandler - SZABVISSZA</string>
+    <string name="title_virtualvegek">StockHandler - VIRTUÁLVÉGEK</string>
+    <string name="title_vegszerkeszto">StockHandler - VÉGSZERKESZTÉS</string>
+    <string name="title_matricaszerkeszto">StockHandler - MATRICASZERKESZTÉS</string>
+    <string name="title_cikkszamatiro">StockHandler - CIKKSZÁMÁTÍRÁS</string>
+    <string name="title_uzenetek">StockHandler - ÜZENETEK</string>
+    <string name="title_naplozas">StockHandler - NAPLÓZÁS</string>
+    <string name="title_planszedes">StockHandler - PLANSZEDÉS</string>
+    <string name="title_update">StockHandler - FRISSÍTÉS</string>
+    <string name="reconnect">Reconnect</string>
+    <string name="uj">ÚJ</string>
+    <string name="cikkszam">Cikkszám:</string>
+    <string name="hossz">Hossz:</string>
+    <string name="szelesseg">Szélesség:</string>
+    <string name="lokacio">Lokáció:</string>
+    <string name="bin">Bin:</string>
+    <string name="bevetel_napja">Bevétel napja:</string>
+    <string name="vevo">Vevő:</string>
+    <string name="allapot">Állapot:</string>
+    <string name="rendeles">Rendelés:</string>
+    <string name="nev">Név:</string>
+    <string name="mozgas">Mozgás:</string>
+    <string name="mentes">Mentés</string>
+    <string name="felszabadit">Felszabadítás</string>
+    <string name="javitas">Javítás</string>
+    <string name="add_meg_az_uj_lokaciot">Add meg az Új lokációt!</string>
+    <string name="mehet">Mehet</string>
+    <string name="javitas_adatok">Javítás adatok</string>
+    <string name="utoljara_kiadott_hossz_javitasa">Utoljára kiadott Hossz javítása:</string>
+    <string name="utoljara_kiadott_hossz">Utoljára kiadott hossz:</string>
+    <string name="javitas_informacio">(A javításhoz kattints az egyik elemre a listában!)</string>
+    <string name="adatok">Adatok:</string>
+    <string name="feltoltes">Feltöltés</string>
+    <string name="kiadott_hossz">Kiadott hossz:</string>
+    <string name="eddig_kiadott_hossz">Eddig kiadott hossz:</string>
+    <string name="raktaron_hossz">Raktáron hossz:</string>
+    <string name="rendel_sszam">Rendelésszám:</string>
+    <string name="kereses">Keresés</string>
+    <string name="keresesKettospont">Keresés:</string>
+    <string name="uj_cikkszamSima">Új cikkszám</string>,
+    <string name="uj_cikkszamPont">Új cikkszám:</string>
+    <string name="lista">Lista</string>
+    <string name="torles">Törlés</string>
+    <string name="beolvasott_adatok">Beolvasott adatok:</string>
+    <string name="cikkszamatiras">Cikkszám átírás:</string>
+    <string name="desszin_leiras">Desszin / Leírás:</string>
+    <string name="uj_lokacio">Új lokáció:</string>
+    <string name="qr_olvasas">QR OLVASÁS</string>
+    <string name="beolvasas">Beolvasás:</string>
+    <string name="id">ID:</string>
+    <string name="focim">Üdvözöllek a Készlet-kezelő programban!</string>
+    <string name="kiszedes">Kiszedés</string>
+    <string name="keszlet_kivetelezes">Készlet kivételezés</string>
+    <string name="vegszerkesztes">Végszerkesztés</string>
+    <string name="potlas">Pótlás</string>
+    <string name="uzenetek">Üzenetek</string>
+    <string name="ujracsatlakozas">Újracsatlakozás</string>
+    <string name="kuldes">Küldés</string>
+    <string name="beolvasott_matrica">Beolvasott matrica:</string>
+    <string name="qr_code">QR Code:</string>
+    <string name="cikkszamatirasEgybe">Cikkszámátírás</string>
+    <string name="uj_veg_beolvasasa">Új vég beolvasása</string>
+    <string name="namenyi_potlasok">Naményi pótlások</string>
+    <string name="eddigi_potlasok">Eddigi pótlások</string>
+    <string name="uj_kartya_adatai">Új kártya adatai:</string>
+    <string name="uj_hossz">Új hossz:</string>
+    <string name="szel_javitasa">Szél. javítása</string>
+    <string name="szabvissza_adatok">Szabvissza adatok:</string>
+    <string name="regi_hossz">Régi hossz:</string>
+    <string name="uj_lokacioSima">Új Lokáció</string>
+    <string name="a_mai_napon_van_uj_uzenet">A mai napon van új üzenet!</string>
+    <string name="potlas_adatok">Pótlás adatok:</string>
+    <string name="rendelesszam_vagy_szoveg">Rendelésszám vagy szöveg:</string>
+    <string name="masolas">Másolás</string>
+    <string name="elkeszult_matrica">Elkészült matrica:</string>
+    <string name="add_meg_az_id_t">Add meg az ID-t!</string>
+    <string name="add_meg_a_rendelesszamot">Add meg a Rendelésszámot:</string>
+    <string name="nem_talalhat">Nem található!</string>
+    <string name="lezaras">Lezárás</string>
+    <string name="van_virtualis_veg">Van virtuális vég!</string>
+    <string name="mutasd">Mutasd</string>
+    <string name="virt_vegek">Virt. Végek</string>
+    <string name="keszleten_hossz">Készleten hossz:</string>
+    <string name="rendelesi_szelesseg">Rendelési szélesség:</string>
+    <string name="szukseges_hossz">Szükséges hossz:</string>
+    <string name="rendelesszam">Rendelesszám</string>
+    <string name="virtualis_vegek">Virtális végek</string>
+    <string name="rendelesek">Rendelés(ek):</string>
+    <string name="cikkszam_bin">Cikkszám/Bin:</string>
+    <string name="szovet_keresese">Szövet keresése:</string>
+    <string name="plan_feloldasa">Plan feloldása</string>
+    <string name="plan_lezaras">Plan lezárása</string>
+    <string name="update">Frissítés</string>
+    <string name="unknowSources">Hiba esetén ellenőrizd, hogy az Ismeretlen források engedélyezve van-e a tableten.\nKattints ide, és ellenőrizd</string>
+    <string name="updateinfo">Válasz ki egy .apk végződésű fájlt.</string>
+    <string name="write_file">Az alkalmazás frissítéséhez engedélyezned kell, hogy letudja tölteni a frissítést.!</string>
+    <string name="led">LED Bekapcsolás</string>
+    <string name="ver">ver.: </string>
+    <string-array name="allapot">
+        <item>Válassz...</item>
+        <item>Nincs adat</item>
+        <item>Rövidebb, mentett</item>
+        <item>Hosszabb, mentett</item>
+    </string-array>
+    <string-array name="felhasznalok">
+        <item>Küldő...</item>
+        <item>Robi</item>
+        <item>Balázs</item>
+        <item>Dávid</item>
+        <item>Fejlesztő</item>
+    </string-array>
+    <string-array name="ujlokaciok">
+        <item>Válassz...</item>
+        <item>BRMGG</item>
+        <item>DEINV</item>
+        <item>BRMM</item>
+    </string-array>
+</resources>

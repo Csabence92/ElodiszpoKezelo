@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add meg az Új lokációt!"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="5px"/>
+
+    <TextView
+        android:id="@+id/TextViewUjLokacio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add meg az Új lokációt!"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="5px"
+        android:textColor="#969696"/>
+
+
+    <EditText
+        android:id="@+id/EditTextDialogData"
+        android:layout_width="200px"
+        android:textSize="19px"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginTop="10px"/>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_gravity="center"
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5px"
+        android:layout_marginBottom="5px"
+        android:text="Mehet"/>
+
+</LinearLayout>

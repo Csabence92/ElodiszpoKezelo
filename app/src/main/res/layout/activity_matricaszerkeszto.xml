@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#515050"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|top">
+
+        <TextView
+            android:id="@+id/TextViewConnection"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beolvasott_matrica"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/potlasMatricaLinearLayout"
+            android:layout_marginTop="10dp"
+            android:layout_width="500dp"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:background="#686868"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#686868"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/TextViewmatricaSzerkesztoQRCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/qr_code"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TextViewMatricaSzerkesztoCikkszamText"
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|fill"
+                            android:gravity="center"
+                            android:text="@string/cikkszam"
+                            android:textColor="#BDBDBD"
+                            android:textSize="21sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/TextViewMatricaSzerkesztoCikkszam"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:descendantFocusability="blocksDescendants"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/EditTextMatricaSzerkesztoCikkszam"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:descendantFocusability="blocksDescendants"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="19sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"/>
+
+                        <Switch
+                            android:id="@+id/SwitchMatricaSzerkesztoCikkszam"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TextViewMatricaSzerkesztoRendelesText"
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|fill"
+                            android:gravity="center"
+                            android:text="@string/rendeles"
+                            android:textColor="#BDBDBD"
+                            android:textSize="21sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/TextViewPMatricaSzerkesztoRendeles"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:descendantFocusability="blocksDescendants"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/EditTextMatricaSzerkesztoRendeles"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:descendantFocusability="blocksDescendants"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="19sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"/>
+
+                        <Switch
+                            android:id="@+id/SwitchMatricaSzerkesztoRendeles"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TextViewMatricaSzerkesztoSzelessegText"
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|fill"
+                            android:gravity="center"
+                            android:text="@string/szelesseg"
+                            android:textColor="#BDBDBD"
+                            android:textSize="21sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/TextViewMatricaSzerkesztoSzelesseg"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:descendantFocusability="blocksDescendants"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/EditTextMatricaSzerkesztoSzelesseg"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:descendantFocusability="blocksDescendants"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="19sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"/>
+
+                        <Switch
+                            android:id="@+id/SwitchMatricaSzerkesztoSzelesseg"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TextViewMatricaSzerkesztoHosszText"
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|fill"
+                            android:gravity="center"
+                            android:text="@string/hossz"
+                            android:textColor="#BDBDBD"
+                            android:textSize="21sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/TextViewMatricaSzerkesztoHossz"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:descendantFocusability="blocksDescendants"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/EditTextMatricaSzerkesztoHossz"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:descendantFocusability="blocksDescendants"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="19sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"/>
+
+                        <Switch
+                            android:id="@+id/SwitchMatricaSzerkesztoHossz"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnMatricaSzereksztoMentes"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#197f00"
+            android:text="@string/mentes" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

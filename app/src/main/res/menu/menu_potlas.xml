@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/PotlasMenuTextViewLehetosegek"
+        android:actionLayout="@layout/actionbar_textview"
+        app:showAsAction="ifRoom"
+        android:title="" />
+
+    <item
+        android:id = "@+id/PotlasMenuItemKuldottPotlasok"
+        android:title="@string/namenyi_potlasok"
+        app:showAsAction="never" />
+
+    <item
+        android:id = "@+id/PotlasMenuItemPotlasok"
+        android:title="@string/eddigi_potlasok"
+        app:showAsAction="never" />
+
+    <item
+        android:id = "@+id/PotlasMenuItemReconnect"
+        android:title="@string/ujracsatlakozas"
+        app:showAsAction="never" />
+
+</menu>

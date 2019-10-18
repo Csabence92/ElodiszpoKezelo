@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#515050"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextViewKeszletKivetConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/SwitchKeszletKivetListaUj"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/lista"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="@string/uj_cikkszamSima"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="@string/cikkszam"
+            android:textColor="#BDBDBD"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/SpinnerKeszletKivetCikkszam"
+            android:layout_width="310dp"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom"
+            android:descendantFocusability="blocksDescendants"
+            android:drawSelectorOnTop="true"
+            android:ems="10"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/EditTextKeszletKivetCikkszam"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="25dp"
+            android:gravity="center"
+            android:inputType="text"
+            android:textSize="22sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnKeszletKivetKereses"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-10px"
+            android:text="@string/kereses"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutKeszletKivetRendelesSzam"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="80dp"
+            android:gravity="center"
+            android:text="@string/rendel_sszam"
+            android:textColor="#BDBDBD"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditTextKeszletKivetRendelesSzam"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLength="50"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:gravity="center"
+            android:text="@string/lokacio"
+            android:textColor="#BDBDBD"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewKeszletKivetLokacio"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLength="50"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            tools:ignore="TextViewEdits" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:gravity="center"
+            android:text="@string/raktaron_hossz"
+            android:textColor="#BDBDBD"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewKeszletKivetRaktaronHossz"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLength="50"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            tools:ignore="TextViewEdits" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:gravity="center"
+            android:text="@string/eddig_kiadott_hossz"
+            android:textColor="#BDBDBD"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewKeszletKivetEddigKiadottHossz"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLength="50"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            tools:ignore="TextViewEdits" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:gravity="center"
+            android:text="@string/kiadott_hossz"
+            android:textColor="#BDBDBD"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditTextKeszletKivetKiadottHossz"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:inputType="number|text"
+            android:maxLength="50"
+            android:textColor="#ffffff"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnKeszletKivetOK"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/feltoltes"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:gravity="left|center"
+            android:text="@string/adatok"
+            android:textColor="#BDBDBD"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="480dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:gravity="center|left"
+            android:text="@string/javitas_informacio"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListViewKeszletKivetAdatok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
